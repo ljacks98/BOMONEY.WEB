@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BOMONEY | VGELESS VIBES</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%A4%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">BO<span>MONEY</span></a>
+    <div class="links">
+      <a href="#drop">Next Drop</a>
+      <a href="#music">Music</a>
+      <a href="#beats">Beats</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="cartBtn" aria-expanded="false" aria-haspopup="dialog">Cart<span class="badge" id="cartBadge">0</span></button>
+  </div>
+</nav>
+
+<!-- CART -->
+<div id="cartPanel" role="dialog" aria-label="Your cart">
+  <header><b>Your Cart</b><button id="cartClose" aria-label="Close cart">&times;</button></header>
+  <div id="cartBody"></div>
+  <div id="cartFooter">
+    <div class="cartTotalRow"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+    <button class="btn primary" id="cartCheckoutBtn">Checkout</button>
+    <p class="emailnote" style="padding:0;margin-top:10px">We'll follow up to arrange payment. Card checkout via Stripe is coming soon.</p>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Independent Hip-Hop &bull; New Orleans</div>
+    <h1>BO<span>MONEY</span></h1>
+    <p class="tag">Unorthodox. Uncut. Unlike no other. Self-produced beats, raw underground flow, straight from VGELESS VIBES Studios.</p>
+    <div class="cta">
+      <a class="btn primary" href="#drop">Pre-Order Next Drop</a>
+      <a class="btn ghost" href="#beats">Shop Beats</a>
+      <a class="btn ghost" href="#music">Stream Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- NEXT DROP -->
+<section id="drop" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Coming Soon</div>
+    <h2>Next Drop &amp; Early Access</h2>
+    <p class="sub">Pre-order to listen early before the release date. Price and date are shown as soon as they're locked in.</p>
+    <div class="drop" id="dropBox"></div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+  <div class="wrap">
+    <div class="eyebrow">Discography</div>
+    <h2>Singles &amp; Albums</h2>
+    <p class="sub">Stream the full catalog on Apple Music and Spotify.</p>
+    <div class="filters" id="musicFilters">
+      <button class="chip on" data-f="all">All</button>
+      <button class="chip" data-f="Album">Albums</button>
+      <button class="chip" data-f="Single">Singles</button>
+    </div>
+    <div class="grid" id="musicGrid"></div>
+    <div class="cta">
+      <a class="btn primary" href="https://open.spotify.com/artist/4nJQ6BOYyBf3po4MYMtqpH" target="_blank" rel="noopener">Listen on Spotify</a>
+      <a class="btn ghost" href="https://music.apple.com/us/artist/bomoney/1493883500" target="_blank" rel="noopener">Listen on Apple Music</a>
+      <a class="btn ghost" href="https://www.youtube.com/@bomoneytwo.o" target="_blank" rel="noopener">Watch on YouTube</a>
+    </div>
+  </div>
+</section>
+
+<!-- BEATS -->
+<section id="beats" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">VGELESS VIBES Studios</div>
+    <h2>Beats For Sale</h2>
+    <p class="sub">Self-produced in FL Studio by VGELESS VIBES. Most beats are $15. Checkout and license options are handled through BeatStars, and each beat's page lists its terms. For exclusives or custom work, email us.</p>
+    <div class="grid" id="beatGrid"></div>
+    <div class="cta" id="beatStore">
+      <a class="btn ghost" href="https://www.youtube.com/@vgelessvibesstudios" target="_blank" rel="noopener">VGELESS VIBES on YouTube</a>
+    </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">The Story</div>
+    <h2>About BOMONEY</h2>
+    <div class="bio">
+      <div>
+        <p>BOMONEY is unorthodox, uncut, and unlike no other. He believes in doing his music, his way.</p>
+        <p>He appreciates every artistic ability God has blessed him with, and although he is stepping out late to his calling, he knows it was supposed to be that way. Every one of his life experiences, from joys to pains, has been the catalyst for the intricate lyrics you hear in his music.</p>
+        <p>Born in the Lower Ninth Ward of New Orleans, Louisiana, he is the middle child of three boys. True to his name's origin, "strong and wise warrior," BOMONEY has proven to be just that.</p>
+        <p>An independent hip-hop and rap artist, producer, and creator, he is known for his 2026 album <em>Better Days Ahead</em> and singles like "Trap Phone Freestyle" and "QUEST." His sound focuses on self-produced beats, independent studio flow, and raw underground hip-hop.</p>
+        <div class="cta">
+          <a class="btn ghost small" href="https://www.instagram.com/_bomoney_/" target="_blank" rel="noopener">Instagram @_bomoney_</a>
+          <a class="btn ghost small" href="https://www.youtube.com/@bomoneytwo.o" target="_blank" rel="noopener">YouTube @bomoneytwo.o</a>
+        </div>
+      </div>
+      <div>
+        <div class="quote">"Strong &amp; wise warrior. His music, his way."</div>
+        <ul class="facts">
+          <li><b>Roots</b> Lower Ninth Ward, New Orleans</li>
+          <li><b>Studio</b> VGELESS VIBES</li>
+          <li><b>Latest album</b> Better Days Ahead (2026)</li>
+          <li><b>Sound</b> Raw, underground hip-hop</li>
+          <li><b>Tools</b> Self-produced, FL Studio</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Get In Touch</div>
+    <h2>Contact &amp; Booking</h2>
+    <p class="sub">Email is the best way to reach us for beat purchases, pre-orders, features, collabs, and business. Use the form below, it opens your email app with everything filled in. You can also try the chat bubble for quick answers.</p>
+    <form id="contactForm">
+      <div><label for="cName">Your name</label><input id="cName" required></div>
+      <div><label for="cType">What's this about?</label>
+        <select id="cType">
+          <option>Beat purchase / license</option>
+          <option>Pre-order</option>
+          <option>Feature / collaboration</option>
+          <option>Booking / business</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div><label for="cMsg">Message</label><textarea id="cMsg" required></textarea></div>
+      <button class="btn primary" type="submit">Send Email</button>
+    </form>
+    <p class="meta" style="margin-top:18px">Music &amp; studio: <a href="mailto:vgelessvibes.studios@gmail.com">vgelessvibes.studios@gmail.com</a><br>Business / LLC: <a href="mailto:thewiseonesllc@gmail.com">thewiseonesllc@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; <span id="yr"></span> BOMONEY &bull; VGELESS VIBES Studios &bull; The Wise Ones LLC</div>
+    <div><a href="https://open.spotify.com/artist/4nJQ6BOYyBf3po4MYMtqpH" target="_blank" rel="noopener">Spotify</a> &bull; <a href="https://music.apple.com/us/artist/bomoney/1493883500" target="_blank" rel="noopener">Apple Music</a> &bull; <a href="https://www.youtube.com/@bomoneytwo.o" target="_blank" rel="noopener">YouTube</a> &bull; <a href="https://www.instagram.com/_bomoney_/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+</footer>
+
+<!-- CHAT -->
+<button id="chatBtn" aria-expanded="false">Chat</button>
+<div id="chat" role="dialog" aria-label="Chat with VGELESS VIBES">
+  <header>VGELESS VIBES Assistant<small>Quick answers. For orders, email is best.</small></header>
+  <div id="log"></div>
+  <div class="quick" id="quick"></div>
+  <form id="chatForm"><input id="chatIn" placeholder="Ask about beats, pre-orders, booking..." autocomplete="off"><button class="btn primary small" type="submit">Send</button></form>
+  <div class="emailnote">Need a reply from the team? Email <a href="mailto:vgelessvibes.studios@gmail.com">vgelessvibes.studios@gmail.com</a></div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
